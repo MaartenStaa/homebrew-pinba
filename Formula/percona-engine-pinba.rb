@@ -18,6 +18,11 @@ class PerconaEnginePinba < AbstractEnginePinba
     sha256 '5a1479438de10413a027bfb33ddb3e68e7c679e03138d7197cfd1c541c8e556c'
   end
 
+  resource "judy" do
+    url "https://downloads.sourceforge.net/project/judy/judy/Judy-1.0.5/Judy-1.0.5.tar.gz"
+    sha256 "d2704089f85fdb6f2cd7e77be21170ced4b4375c03ef1ad4cf1075bd414a63eb"
+  end
+
   # Fix https://github.com/tony2001/pinba_engine/issues/40
   patch :DATA
 
